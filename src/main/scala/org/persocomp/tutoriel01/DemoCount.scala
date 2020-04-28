@@ -8,8 +8,8 @@ object DemoCount {
     val conf = new SparkConf().setAppName("Hello Spark").setMaster("local[2]")
     val sc = new SparkContext(conf)
     val textFileFile = sc.textFile(myFile,2).cache()
-    val numAs = textFileFile.filter(line => line.contains("val")).count()
+    val numberVal = textFileFile.filter(line => line.contains("val")).count()
     println("#### Hello Spark")
-    println("#### Lines with word val: %s".format(numAs))
+    println("#### Lines with word val: %s".format(numberVal))
   }
 }
