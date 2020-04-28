@@ -1,4 +1,4 @@
-package org.persocomp.tutoriel1
+package org.persocomp.tutoriel01
 
 import org.apache.spark.{SparkConf, SparkContext}
 
